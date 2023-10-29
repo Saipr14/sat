@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOADING/HOME</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Description of the page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="preloader"></div>
+  <div class="container">
+  <header>
+<div class="header maxwidth">
+<h1><a href="#">LOADING</a></h1>
+<nav class="menu">
+    <div id="menu-toggle" class="menu-toggle"> <img src="images/user logo.png" width="50" height="50"></div>
+  <div class="menu-items">
+    <ul>
+    <li class="Pro" style="color: #fbca03;"><a href="#"> Profile</a></li>
+    <li class="Abt" style="color: #fbca03;"><a href="#">Email Settings</a></li>
+    <li class="Sig" style="color: #fbca03;"><a href="#">Settings</a></li>
+    <li class="Log" style="color: #fbca03;"><a href="#">Logout</a></li>
+  </ul>
+</div>
+</nav>
+</div>
+</header>
+
+
+
+<div class="hero">
+<h1 style=" margin-top: 20px; margin-bottom: 20px; align-items: center; text-align: center;"><u>SCHEDULE</u></h1>
+<a  href="ground.html" style="color: rgba(170,5,5,1);"><div class="GE">GROUND EVENTS  &#10095</div></a>
+<a  href="online.html" style="color: rgba(170,5,5,1);"><div class="OG">E-Sports &#10095</div></a>
+<a  href="fixtures.html" style="color: rgba(170,5,5,1);"><div class="CF">CURRENT FIXTURES  &#10095</div></a>
+</div>
+
+
+
+
+
+
+
+
+
+
+<footer>
+<div class="footer"> 
+  <nav class="nav_footer">
+  <div class="list">
+    <ul>
+    <li class="Pro"  title="Home"><a href="#"><i class="fa fa-home" style="font-size:40px;"></i></a></li>
+    <li class="Abt"  title="Scheduled Event"><a href="#"><i class="fa fa-calendar" style="font-size:40px;"></i></a></li>
+    <li class="Sig"  title="News Articles"><a href="#"><i class="fa fa-envelope-o" style="font-size:40px;"></i></a></li>
+    <li class="Log" title="Add Schedules"><a href="#"><i class="fa fa-plus-square-o" style="font-size:40px;"></i></a></li>
+  </ul>
+</div>
+</nav>
+</div>
+</footer>
+</div>
+
+<style>
+  #preloader{
+   height: 100vh;
+   width: 100%;
+   z-index: 100;
+   background: url('preloader.gif') no-repeat;
+}
+</style>
+
+
+<script>
+
+  var loader = document.getElementById("preloader")
+  window.addEventListener("load",function(){
+   loader.style.display="none";
+  })
+
+</script>
+</body>
+</html>

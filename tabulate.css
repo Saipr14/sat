@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.input-container {
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+td, th {
+    border: 1px solid #fbca03;
+    text-align: left;
+    padding: 8px;
+    align-items: center;
+    text-align: center;
+  }
+
+  table{
+     background: linear-gradient(90deg, rgba(75, 9, 8, 1) 0%, rgba(106, 12, 11, 1) 35%, rgba(170, 5, 5, 1) 100%);
+     top: -20px;
+  }
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+ background: linear-gradient(90deg, rgba(75, 9, 8, 1) 0%, rgba(106, 12, 11, 1) 35%, rgba(170, 5, 5, 1) 100%);;
+}
+
+/* CSS counter for serial number */
+tbody tr{
+    counter-increment: rowNumber;
+    content: counter(rowNumber);
+}
+
+/* Add player button */
+.add-player {
+    font-size: 20px;
+    color: #007BFF;
+    cursor: pointer;
+}
+
+/* Logo image size */
+.team-logo {
+    max-width: 5px;
+    max-height: 5px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html,body{
+    height: 100%;
+    width: 100vw;
+    max-width:100% ;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace, 'Oswald', sans-serif;
+ background-color: rgb(244, 240, 240);
+ font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    min-height: 100%;
+    background-image: url('images/arc4.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    background-position: center;
+   
+}
+
+
+img{
+    display: block;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr auto; /* Create two rows, the first grows to fill available space, the second is for the footer */
+    min-height: 100vh;
+}
+
+
+.header ul li{
+    position: relative;
+    bottom: 22px;
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.header h1{
+    position: relative;
+    max-width: fit-content;
+    top: 22px;
+    left: 12px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+}
+
+a:hover{
+    color: #b97d10;
+}
+
+a ,a:visited{
+    text-decoration: none;
+    color: #fbca03;
+}
+
+.header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    background: rgb(75,9,8);
+background: linear-gradient(90deg, rgba(75,9,8,1) 0%, rgba(106,12,11,1) 35%, rgba(170,5,5,1) 100%);
+filter: drop-shadow(-15px 2px 18px rgb(78, 77, 77));
+}
+
+.header ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-items{
+    display: none;
+    
+}
+
+.menu-toggle img{
+    float: right;
+    position: relative;
+    top: -26px;
+    right: 12px;
+
+}
+
+/*Same for all page*/
+.hero{
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 0;
+    top: 0;
+    font-size: 24px;
+    font-style: bold;
+    color: #fbca03;
+}
+
+.hero h1,#teamName,#addTeam{
+    position: relative;
+    color: #fbca03;
+   
+}
+
+#addTeam{
+    background: linear-gradient(90deg, rgba(75, 9, 8, 1) 0%, rgba(106, 12, 11, 1) 35%, rgba(170, 5, 5, 1) 100%);
+}
+/*Same for all page*/
+
+.hero  a{
+    color: rgba(170,5,5,1);
+}
+
+/*Same for all page*/
+.footer{
+    position: sticky;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(75, 9, 8);
+    background: linear-gradient(90deg, rgba(75, 9, 8, 1) 0%, rgba(106, 12, 11, 1) 35%, rgba(170, 5, 5, 1) 100%);
+    box-shadow: 12px 12px 22px grey;
+    z-index: 1;
+}
+
+
+
+.footer ul {
+    list-style: none;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+
+}
+
+.footer ul li {
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    bottom: 0;
+    filter: drop-shadow(-15px 2px 18px #b97d10);
+}
+
+.footer ul li a {
+    color: #fbca03;
+    text-decoration: none;
+    
+}
+
+.footer ul li a:hover {
+    color: rgb(103, 173, 214);
+    text-decoration: none;
+    
+}
+
+/*Same for all page*/
+  
