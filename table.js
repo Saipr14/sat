@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const addTeamButton = document.getElementById("addTeam");
     const teamTable = document.getElementById("teamTable");
     let serialNumber = 1;
-    const teamLogos = ["images/team_logo.png", "images/team_logo1.png", "images/team_logo2.png"];
+    const teamLogos = ["images/flagind.png", "images/flagaus.png", "images/flagsou.png"];
     let currentLogoIndex = 0;
 
     addTeamButton.addEventListener("click", addTeam);
