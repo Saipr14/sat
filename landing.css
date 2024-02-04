@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html,body{
+    height: 100%;
+    width: 100vw;
+    max-width:100% ;
+    
+}
+
+
+
+body{
+    font-family: 'Courier New', Courier, monospace, 'Oswald', sans-serif;
+ background-color: rgb(244, 240, 240);
+ font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-image: url('images/arc4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    background-position: center;
+}
+
+
+img{
+    display: block;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header ul li{
+    position: relative;
+    bottom: 22px;
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.header h1{
+    position: relative;
+    max-width: fit-content;
+    top: 22px;
+    left: 12px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+}
+
+a:hover{
+    color: #b97d10;
+}
+
+a ,a:visited{
+    text-decoration: none;
+    color: #fbca03;
+}
+
+.header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    background: rgb(75,9,8);
+background: linear-gradient(90deg, rgba(75,9,8,1) 0%, rgba(106,12,11,1) 35%, rgba(170,5,5,1) 100%);
+filter: drop-shadow(-15px 2px 18px #fbca03);
+}
+
+.header ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-items{
+    display: none;
+    
+}
+
+.menu-toggle img{
+    float: right;
+    position: relative;
+    top: -26px;
+    right: 12px;
+
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(75, 9, 8);
+    background: linear-gradient(90deg, rgba(75, 9, 8, 1) 0%, rgba(106, 12, 11, 1) 35%, rgba(170, 5, 5, 1) 100%);
+    box-shadow: 12px 12px 22px grey;
+    margin-top: auto;
+}
+
+.footer ul {
+    list-style: none;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    min-height: 100%;
+}
+
+.footer ul li {
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    bottom: 0;
+    filter: drop-shadow(-15px 2px 18px #b97d10);
+}
+
+.footer ul li a {
+    color: #fbca03;
+    text-decoration: none;
+    
+}
+
+.footer ul li a:hover {
+    color: rgb(103, 173, 214);
+    text-decoration: none;
+    
+}
+
+.hero{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+.hero {
+    font-size: 24px;
+    font-style: bold;
+    color: rgba(170,5,5,1);
+}
+
+.hero h1{
+ color: #fbca03;
+}
+
+.hero .GE:hover{
+    background-image: url('images/ground.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: background 0.5s ease;
+    color: white;
+}
+
+.hero .OG:hover{
+    background-image: url('images/online.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: background 0.5s ease;
+    color: white;
+}
+
+.hero .CF:hover{
+    background-image: url('images/fixtures.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: background 0.5s ease;
+    color: white;
+}
+
+.hero .GE,.OG,.CF{
+    padding: 32px;
+    background: rgb(251,202,3);
+    background: linear-gradient(135deg, rgba(251,202,3,1) 9%, rgba(185,125,16,1) 69%);
+    margin: 50px 12px 50px 12px;
+    border-radius: 135px;
+    filter: drop-shadow(-15px 2px 18px rgb(103, 173, 214));
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hero a{
+    color: rgba(170,5,5,1);
+}
+
